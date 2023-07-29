@@ -1,0 +1,162 @@
+:root {
+    --content-color: #555;
+    --list-color: #444;
+    --line-color: #aaa;
+}
+
+body {
+    color: #fff !important;
+}
+
+a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0 !important;
+}
+
+input,
+textarea,
+select {
+    color: #000 !important;
+}
+
+.invalid-feedback > strong {
+    color: #fa0;
+}
+
+.links {
+    margin: 1rem 0 !important;
+}
+
+.links > a {
+    text-decoration: underline !important;
+}
+
+.links > a:hover {
+    color: #0ff !important;
+}
+
+.background {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.side-bar {
+    z-index: 1;
+    background-color: var(--content-color);
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-200px);
+    transition: transform .3s;
+}
+
+.side-bar > .container {
+    margin-top: 80px;
+}
+
+.side-bar li {
+    list-style: none;
+}
+
+.side-bar a {
+    display: inline-block;
+    width: 100%;
+    padding: .5rem .3rem;
+}
+
+.side-bar a:hover {
+    background-color: #778;
+}
+
+#categoryBtn,
+#typeListsBtn {
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: var(--content-color);
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.card {
+    border: none !important;
+}
+
+.card-header {
+    background-color: var(--content-color) !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--line-color) !important;
+}
+
+.card-body,
+.card-footer {
+    background-color: var(--content-color) !important;
+}
+
+.title {
+    border-bottom: 1px solid #fff;
+}
+
+aside {
+    background-color: var(--content-color);
+}
+
+.title-lists,
+.lists {
+    margin: 0;
+    padding: 0;
+}
+
+.title-lists > li {
+    list-style: none;
+    border-bottom: 1px solid var(--line-color);
+    padding: 16px 0;
+}
+
+.lists > li {
+    list-style: none;
+    background-color: var(--list-color);
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.lists i + span {
+    font-size: .7rem;
+    margin-top: 4px;
+}
+
+.dropdown-item.disabled {
+    color: #777 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #555 !important;
+}
+
+.drop-hover:hover > .dropdown-menu {
+    display: block !important;
+}
+
+.modal-header {
+    background-color: var(--content-color);
+}
+
+.modal-body,
+.modal-footer {
+    background-color: var(--list-color) !important;
+}
